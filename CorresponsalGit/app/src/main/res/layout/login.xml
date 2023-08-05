@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".login">
+
+    <RelativeLayout
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/loginTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="77dp"
+            android:textStyle="bold"
+            android:text="@string/LoginTitulo"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="55dp" />
+
+        <View
+            android:id="@+id/barra"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_below="@+id/loginTitulo"
+            android:layout_marginTop="10dp"
+            android:background="@color/azul_def"
+            android:layout_marginHorizontal="20dp"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/loginTitulo"
+            android:layout_marginTop="0dp"
+            app:srcCompat="@drawable/ic_circle1" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_layout_email"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginTitulo"
+            android:layout_marginHorizontal="60dp"
+            android:layout_marginTop="115dp"
+            android:hint="@string/LoginCorreo">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/loginCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableLeft="@drawable/ic_correo"
+                android:inputType="textEmailAddress" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_layout_passw"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_input_layout_email"
+            android:layout_marginHorizontal="60dp"
+            android:layout_marginTop="23dp"
+            android:hint="@string/LoginPassword"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/loginPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/loginBtnIniciaS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="70dp"
+            android:layout_marginBottom="69dp"
+            android:text="@string/LoginTbnIniciar" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="205dp"
+            android:layout_height="192dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="-84dp"
+            android:layout_marginEnd="-99dp"
+            app:srcCompat="@drawable/ic_circle2" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="178dp"
+            android:layout_height="165dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-95dp"
+            android:layout_marginBottom="-76dp"
+            app:srcCompat="@drawable/ic_circle2" />
+
+
+    </RelativeLayout>
+</LinearLayout>

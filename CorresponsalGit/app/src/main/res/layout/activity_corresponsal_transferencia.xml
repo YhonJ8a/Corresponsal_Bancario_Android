@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CorresponsalDepocitos">
+
+    <include
+        layout="@layout/activity_plantilla_general"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="112dp"
+        android:text="Transferencia"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_below="@+id/textView7"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/plantilla1azul" />
+
+    <EditText
+        android:id="@+id/CCaTrasferir"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textView7"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="61dp"
+        android:background="@drawable/plantilla1"
+        android:hint="Numero de cédula a transferir"
+        android:paddingLeft="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/CCqTransferir"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/CCaTrasferir"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/plantilla1"
+        android:hint="Numero de cédula que transferir"
+        android:inputType="number"
+        android:paddingLeft="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/montoTranferencia"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/CCqTransferir"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/plantilla1"
+        android:drawableLeft="@drawable/ic_money2"
+        android:hint="Monto a transferirr"
+        android:inputType="number"
+        android:paddingLeft="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginBottom="142dp">
+
+
+        <androidx.constraintlayout.utils.widget.MotionButton
+            android:id="@+id/confirmarTransferencia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/plantilla1azul"
+            android:text="@string/AdminCrearClienteBtnConfirmar"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <androidx.constraintlayout.utils.widget.MotionButton
+            android:id="@+id/CanselarTransferencia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/plantilla1azul2"
+            android:text="@string/AdminCrearClienteBtnCanselar"
+            android:textColor="@color/azul_def"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

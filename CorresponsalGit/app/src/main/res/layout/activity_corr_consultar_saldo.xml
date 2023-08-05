@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CorrConsultarSaldo">
+
+    <include
+        layout="@layout/activity_plantilla_general"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="138dp"
+        android:textStyle="bold"
+        android:text="Consulta de Saldo"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@+id/textView2"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/plantilla1azul" />
+
+    <EditText
+        android:id="@+id/ccConsultaS"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textView2"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="138dp"
+        android:background="@drawable/plantilla1"
+        android:ems="10"
+        android:hint="@string/ConsultarClienteCC"
+        android:inputType="number"
+        android:paddingLeft="20dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginBottom="170dp">
+
+
+        <androidx.constraintlayout.utils.widget.MotionButton
+            android:id="@+id/confirmarConsultSaldo"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/plantilla1azul"
+            android:text="@string/AdminCrearClienteBtnConfirmar"
+            android:textColor="@color/white" />
+
+        <androidx.constraintlayout.utils.widget.MotionButton
+            android:id="@+id/canselarConsultSaldo"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/plantilla1azul2"
+            android:text="@string/AdminCrearClienteBtnCanselar"
+            android:textColor="@color/azul_def" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/notificacion"
+        layout="@layout/activity_plantilla_notificasion"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <EditText
+        android:id="@+id/salidaTextConsultSaldo"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginBottom="285dp"
+        android:background="@drawable/plantilla3azul"
+        android:focusable="false"
+        android:inputType="textMultiLine"
+        android:paddingLeft="20dp"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/aceptarConsulta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginBottom="195dp"
+        android:text="Aceptar" />
+
+
+</RelativeLayout>

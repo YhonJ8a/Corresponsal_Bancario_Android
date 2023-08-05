@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8F000000"
+    tools:context=".PLantillaNotificasion">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginHorizontal="40dp"
+        android:background="@drawable/plantillanotifi"
+        android:layout_marginTop="300dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Retiro tiene un costo de 2.000,00 pesos que se descontaran directamente de su cuenta de WPOSS. Desea continuar?"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="40dp">
+
+
+            <androidx.constraintlayout.utils.widget.MotionButton
+                android:id="@+id/si"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/plantilla1azul"
+                android:text="Si"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <androidx.constraintlayout.utils.widget.MotionButton
+                android:id="@+id/no"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/plantilla1azul2"
+                android:text="No"
+                android:textColor="@color/azul_def"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

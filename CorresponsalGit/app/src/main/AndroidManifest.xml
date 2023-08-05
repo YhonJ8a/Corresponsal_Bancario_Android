@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.newpos.corresponsal">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Corresponsal">
+        <activity
+            android:name=".CorrConsultarSaldo"
+            android:exported="true" />
+        <activity
+            android:name=".CorrHistorialTransaccional"
+            android:exported="true" />
+        <activity
+            android:name=".PlantillaListaTransaccional"
+            android:exported="false" />
+        <activity
+            android:name=".CorrNuevoCliente"
+            android:exported="false" />
+        <activity
+            android:name=".CorrConfirmarCorresponsal"
+            android:exported="false" />
+        <activity
+            android:name=".ActualizarCorr"
+            android:exported="false" />
+        <activity
+            android:name=".MenuCorresponsal"
+            android:exported="false" />
+        <activity
+            android:name=".CorrTransferenciaPin"
+            android:exported="false" />
+        <activity
+            android:name=".CorresponsalTransferencia"
+            android:exported="false" />
+        <activity
+            android:name=".ConfirmarDepocito"
+            android:exported="true" />
+        <activity
+            android:name=".CorresponsalDepocitos"
+            android:exported="true" />
+        <activity
+            android:name=".ConfirmacionRetiro"
+            android:exported="true" />
+        <activity
+            android:name=".PLantillaNotificasion"
+            android:exported="true" />
+        <activity
+            android:name=".CorrRetiros"
+            android:exported="true" />
+        <activity
+            android:name=".VistaCanselarCorr"
+            android:exported="true" />
+        <activity
+            android:name=".VistaConfirmaPin"
+            android:exported="true" />
+        <activity
+            android:name=".ConfirmacionCorresponsal"
+            android:exported="true" />
+        <activity
+            android:name=".CorrPagoConTarjeta"
+            android:exported="true" />
+        <activity
+            android:name=".CorresponsalVistaPrincipal"
+            android:exported="true" />
+        <activity
+            android:name=".ActualizarCliente"
+            android:exported="true" />
+        <activity
+            android:name=".ActualizarCorresponsal"
+            android:exported="true" />
+        <activity
+            android:name=".MenuAdmin"
+            android:exported="true" />
+        <activity
+            android:name=".ListaCorresponsales"
+            android:exported="true" />
+        <activity
+            android:name=".ListadoClientes"
+            android:exported="true" />
+        <activity
+            android:name=".ConfirmarCorresponsal"
+            android:exported="true" />
+        <activity
+            android:name=".ConsultarCorresponsal"
+            android:exported="true" />
+        <activity
+            android:name=".plantillaTarjetaC"
+            android:exported="true" />
+        <activity
+            android:name=".ConsultarCliente"
+            android:exported="false" />
+        <activity
+            android:name=".VistaConfirmacion"
+            android:exported="true" />
+        <activity
+            android:name=".NuevoCorresponsal"
+            android:exported="true" />
+        <activity
+            android:name=".VistaPin"
+            android:exported="true" />
+        <activity
+            android:name=".VistaCanselar"
+            android:exported="true" />
+        <activity
+            android:name=".CrearCliente"
+            android:exported="true" />
+        <activity
+            android:name=".plantllaOpciones"
+            android:exported="true" />
+        <activity
+            android:name=".PlantillaAdmin"
+            android:exported="true" />
+        <activity
+            android:name=".AdminVistaPrincipal"
+            android:exported="true" />
+        <activity
+            android:name=".plantillaGeneral"
+            android:exported="true" />
+        <activity
+            android:name=".login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

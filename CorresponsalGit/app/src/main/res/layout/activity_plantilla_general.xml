@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/plantilla"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".plantillaGeneral">
+
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="205dp"
+        android:layout_height="192dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-84dp"
+        android:layout_marginEnd="-99dp"
+        app:srcCompat="@drawable/ic_circle2" />
+
+    <ImageView
+        android:id="@+id/imageView31"
+        android:layout_width="178dp"
+        android:layout_height="165dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-95dp"
+        android:layout_marginBottom="-76dp"
+        app:srcCompat="@drawable/ic_circle2" />
+
+    <TextView
+        android:id="@+id/plantillaNomCorresponsal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toStartOf="@+id/imageView21"
+        android:paddingLeft="20dp"
+        android:textAllCaps="true"
+        android:textColor="@color/azul_def"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/plantillaSaldoCorresponsal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/plantillaNomCorresponsal"
+        android:layout_alignEnd="@+id/plantillaNomCorresponsal"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:drawableLeft="@drawable/ic_money2"
+        android:paddingLeft="20dp"
+        android:textColor="@color/azul_def"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/plantillaNCuenta"
+        android:layout_width="305dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/plantillaSaldoCorresponsal"
+        android:layout_alignEnd="@+id/plantillaSaldoCorresponsal"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:drawableLeft="@drawable/ic_numeral"
+        android:paddingLeft="20dp"
+        android:textColor="@color/azul_def"
+        android:textSize="20dp" />
+
+    <ImageButton
+        android:id="@+id/CorrOpciones"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="#00FFFFFF"
+        app:srcCompat="@drawable/ic_baseline" />
+
+    <ImageButton
+        android:id="@+id/CorrAtras"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/plantilla4"
+        app:srcCompat="@drawable/ic_back" />
+
+
+
+</RelativeLayout>

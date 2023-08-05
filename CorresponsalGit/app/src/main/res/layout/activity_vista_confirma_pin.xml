@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VistaConfirmaPin">
+
+
+    <include
+        layout="@layout/activity_plantilla_general"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/TextConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="115dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_below="@+id/TextConfirm"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/plantilla1azul" />
+
+    <EditText
+        android:id="@+id/Pin"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/TextConfirm"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="133dp"
+        android:background="@drawable/plantilla1"
+        android:ems="10"
+        android:hint="PIN"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginBottom="211dp">
+
+
+        <androidx.constraintlayout.utils.widget.MotionButton
+            android:id="@+id/confirmarPin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/plantilla1azul"
+            android:text="@string/AdminCrearClienteBtnConfirmar"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <androidx.constraintlayout.utils.widget.MotionButton
+            android:id="@+id/CanselarPin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/plantilla1azul2"
+            android:text="@string/AdminCrearClienteBtnCanselar"
+            android:textColor="@color/azul_def"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

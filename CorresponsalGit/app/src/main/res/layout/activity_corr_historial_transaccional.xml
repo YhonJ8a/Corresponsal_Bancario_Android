@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CorrHistorialTransaccional">
+
+
+    <include
+        layout="@layout/activity_plantilla_general"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="80dp"
+        android:text="Historial Transaccional"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/barra"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/textView"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/azul_def" />
+
+    <EditText
+        android:id="@+id/buscadorHistCorr"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textView"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/plantilla3azul"
+        android:drawableLeft="@drawable/ic_search_azul"
+        android:ems="10"
+        android:hint="Numero de Cuenta"
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        android:textColorHint="#5C5C5C"
+        android:textSize="20sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listaTransacciones"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/buscadorHistCorr"
+        android:layout_marginTop="18dp" />
+
+
+</RelativeLayout>

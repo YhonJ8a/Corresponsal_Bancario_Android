@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConsultarCliente">
+
+    <include
+        layout="@layout/activity_plantilla_admin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="138dp"
+        android:text="@string/ConsultarClienteTitulo"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@+id/textView2"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/plantilla2rojo" />
+
+    <EditText
+        android:id="@+id/ccConsulta"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textView2"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="138dp"
+        android:background="@drawable/plantilla1roja"
+        android:ems="10"
+        android:hint="@string/ConsultarClienteCC"
+        android:inputType="number"
+        android:paddingLeft="20dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginBottom="170dp">
+
+
+        <androidx.constraintlayout.utils.widget.MotionButton
+            android:id="@+id/confirmarConsulCliente"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/plantilla2rojo"
+            android:text="@string/AdminCrearClienteBtnConfirmar"
+            android:textColor="@color/white" />
+
+        <androidx.constraintlayout.utils.widget.MotionButton
+            android:id="@+id/canselarNewConsulCliente"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/plantilla2"
+            android:text="@string/AdminCrearClienteBtnCanselar"
+            android:textColor="@color/rojo_def" />
+    </LinearLayout>
+
+
+    <include
+        android:id="@+id/tarjeta"
+        layout="@layout/activity_plantilla_tarjeta_c"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="68dp" />
+
+
+</RelativeLayout>

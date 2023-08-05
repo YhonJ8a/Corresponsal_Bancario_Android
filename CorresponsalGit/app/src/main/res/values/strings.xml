@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Corresponsal</string>
+
+    <!--    login-->
+    <string name="LoginTitulo">Bienvenido a Corresponsal</string>
+    <string name="LoginCorreo">Correo Electronico</string>
+    <string name="LoginPassword">Contraseña</string>
+    <string name="LoginTbnIniciar">Iniciar Sesion</string>
+
+
+    <!--    AdminVIstaCrearCliente-->
+    <string name="AdminCrearClienteTitulo">Crear Cliente</string>
+    <string name="AdminCrearCLienteNomrbe">NOMBRE CLIENTE</string>
+    <string name="AdminCrearClienteCC">Numero de cédula</string>
+    <string name="AdminCrearClienteSaldo">Saldo Inicial</string>
+    <string name="AdminCrearClienteBtnConfirmar">Comfirmar</string>
+    <string name="AdminCrearClienteBtnCanselar">Canselar</string>
+
+    <!--    vista pin-->
+    <string name="AdminVistaPinTitulo">Ingrese su pin</string>
+    <string name="AdminVistaPinPin">PIN</string>
+    <string name="AdminVistaPinBtnConfirmar">Aceptar</string>
+
+    <!--    nuevo corresponsal-->
+    <string name="NewCorrTitulo">Registrar Corresponsal</string>
+    <string name="NewCorrNombre">NOMBRE CORRESPONSAL</string>
+    <string name="NewCorrNit">NIT de corresponsal</string>
+    <string name="NewCorrCorreo">Correo Corresponsal</string>
+    <string name="NewCorrPassw">Contraseña corresponsal</string>
+    <string name="NewCorrBtnConfirmar">Confirmar</string>
+    <string name="NewCorrBtnCanselar">Canselar</string>
+
+    <!--    vistaConfirmacion-->
+    <string name="ConfirmacionTitulo">Confirmar datos correspoinsal</string>
+
+    <!--    vista canselar-->
+    <string name="VistaCanselarBtnSalir">Salir</string>
+
+    <!--    consultar cliente-->
+    <string name="ConsultarClienteTitulo">Consultar Cliente</string>
+    <string name="ConsultarClienteCC">Numero de cédula a consultar</string>
+
+    <!--    confirmar-->
+    <string name="tituloConfirmarCorr">Consultar Corresponsal</string>
+    <string name="Btn1ConfirmarCorr">Habilitar</string>
+    <string name="Btn2ConfirmarCorr">Deshabilitar</string>
+
+    <!--    menuAdmin-->
+    <string name="menuAdActualizar">Actualizar Corresponsal</string>
+    <string name="menuAdAcClientes">Actualizar Clientes</string>
+    <string name="menuASalir">Cerrar Sesión</string>
+
+
+    <!--    menuAdmin-->
+    <string name="menuCoActualizar">Actualizar Datos</string>
+    <string name="menuCoAcClientes">Crear Cliente</string>
+    <string name="menuCoSalir">Cerrar Sesión</string>
+
+
+    <!--    actualizar corresponsal-->
+    <string name="actualizarTitulo">Actualizar Corresponsal</string>
+
+    <!--    actualizar cliente-->
+    <string name="actualizarCliTitulo">Actualizar Cliente</string>
+
+
+</resources>

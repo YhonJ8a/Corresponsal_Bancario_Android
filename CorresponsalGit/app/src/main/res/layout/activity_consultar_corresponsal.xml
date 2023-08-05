@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConsultarCorresponsal">
+
+
+    <include
+        layout="@layout/activity_plantilla_admin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="118dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="141dp"
+        android:text="consultar corresponsal" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="3dp"
+        android:layout_marginHorizontal="40dp"
+        android:background="@color/rojo_def" />
+
+    <EditText
+        android:id="@+id/nit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textView3"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="126dp"
+        android:background="@drawable/plantilla1roja"
+        android:hint="Numero NIT a consultar"
+        android:inputType="number" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginBottom="170dp">
+
+
+        <androidx.constraintlayout.utils.widget.MotionButton
+            android:id="@+id/confirmarConsulCorresponsal"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/plantilla2rojo"
+            android:text="@string/AdminCrearClienteBtnConfirmar"
+            android:textColor="@color/white" />
+
+        <androidx.constraintlayout.utils.widget.MotionButton
+            android:id="@+id/canselarNewConsulCorresponsal"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/plantilla2"
+            android:text="@string/AdminCrearClienteBtnCanselar"
+            android:textColor="@color/rojo_def" />
+    </LinearLayout>
+
+</RelativeLayout>

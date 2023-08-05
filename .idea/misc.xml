@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Documentos/Corresponsal/CorresponsalGit/app/src/main/res/drawable-v24/plantilla2.xml" value="0.403125" />
+        <entry key="..\:/Documentos/Corresponsal/CorresponsalGit/app/src/main/res/drawable-v24/plantilla2rojo.xml" value="0.403125" />
+        <entry key="..\:/Documentos/Corresponsal/CorresponsalGit/app/src/main/res/drawable/ic_back.xml" value="0.403125" />
+        <entry key="..\:/Documentos/Corresponsal/CorresponsalGit/app/src/main/res/drawable/ic_baseline.xml" value="0.403125" />
+        <entry key="..\:/Documentos/Corresponsal/CorresponsalGit/app/src/main/res/drawable/ic_circle2.xml" value="0.403125" />
+        <entry key="..\:/Documentos/Corresponsal/CorresponsalGit/app/src/main/res/drawable/ic_circle3.xml" value="0.403125" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_15" project-jdk-name="Android API 26 Platform" project-jdk-type="Android SDK" />
+</project>

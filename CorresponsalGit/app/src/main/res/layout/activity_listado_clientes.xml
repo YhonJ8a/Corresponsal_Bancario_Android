@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListadoClientes">
+
+
+    <include
+        layout="@layout/activity_plantilla_admin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="100dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="40dp"
+            android:layout_weight="1"
+            android:paddingLeft="20dp"
+            android:text="Listado de clientes"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@+id/textView4"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/plantilla3roja" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/buscador"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/titulo"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/plantilla3"
+        android:drawableLeft="@drawable/ic_searchs"
+        android:ems="10"
+        android:hint="Cedula del cliente"
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        android:textColorHint="#5C5C5C"
+        android:textSize="20sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ListaClientes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/buscador"
+        android:layout_marginTop="10dp" />
+
+
+</RelativeLayout>
